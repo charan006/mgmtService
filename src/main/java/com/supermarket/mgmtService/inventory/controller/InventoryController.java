@@ -78,6 +78,7 @@ public class InventoryController {
 	@DeleteMapping("/inventory/deleteByCategory/{category}")
 	public void deleteByCategory(@PathVariable String category) {
 //		System.out.println(category);
+//Testing git
 		List<SuperMarket> sm = repository.findByCategory(category);
 		for (int i = 0; i < sm.size(); i++) {
 			SuperMarket item = sm.get(i);
