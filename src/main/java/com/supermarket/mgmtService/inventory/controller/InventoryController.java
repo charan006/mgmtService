@@ -42,7 +42,7 @@ public class InventoryController {
 	public void addItem(@RequestBody SuperMarket sm) {
 		repository.save(sm);
 	}
-
+//test git
 	@GetMapping("/inventory/getQuantity/{id}")
 	public String searchQuantityById(@PathVariable long id) {
 		Optional<SuperMarket> sm = repository.findById(id);
